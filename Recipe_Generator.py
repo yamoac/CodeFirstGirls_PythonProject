@@ -2,11 +2,7 @@ from flask import Flask, render_template, request
 app = Flask("MyApp")
 @app.route('/')
 def hello():
-    return "Hey there!"
-
-@app.route("/<name>")
-def hello_someone(name):
-        return render_template("recipe_generator.html", name=name.title())
+    return render_template("recipe_generator.html")
 
 @app.route("/signup", methods=["POST"])
 def sign_up():
