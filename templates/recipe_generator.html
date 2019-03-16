@@ -235,11 +235,50 @@
         </br>
 
   <p>Your recipe of the day is just a few clicks away...</p>
-      <div id="contact-form">
-        <form method="post" action="/signup">
-          <label for="email">Email address:</label>
-          <input type="email" id="email" name="email" required="required">
-          <input type="submit" value="Submit" id="submit-button">
-        </form>
-      </div>
+
+  <br>
+</br>
+
+  <h1 class="homepage-caption">Meal Type</h1>
+  <form>
+    <input type="radio" name="meal_type" value="Vegan"> Vegan<br>
+    <input type="radio" name="meal_type" value="Veggie"> Veggie<br>
+    <input type="radio" name="meal_type" value="No Carbs"> No Carbs<br>
+    <input type="radio" name="meal_type" value="Pescatarian"> Pescatarian<br>
+    <input type="radio" name="meal_type" value="Meatatarian"> Meatatarian<br>
+    <input type="radio" name="meal_type" value="Cheat Day"> Cheat Day<br>
+    <br>
+  </form>
+
+  <h1 class="homepage-caption">Ingredients</h1>
+  <form>
+    <input type="checkbox" name="meal_type" value="Vegan"> Vegan
+    <input type="checkbox" name="meal_type" value="Veggie"> Veggie<br>
+    <input type="checkbox" name="meal_type" value="No Carbs"> No Carbs
+    <input type="checkbox" name="meal_type" value="Pescatarian"> Pescatarian<br>
+    <input type="checkbox" name="meal_type" value="Meatatarian"> Meatatarian
+    <input type="checkbox" name="meal_type" value="Cheat Day"> Cheat Day<br>
+    <br>
+  </form>
+
+  <h1 class="homepage-caption">Cooking Time</h1>
+  <form action="/recipe.html">
+    <input type="radio" name="cooking_time" value="up to 30mins"> 10 - 30mins<br>
+    <input type="radio" name="cooking_time" value="up to 60mins"> 30 - 60mins<br>
+    <input type="radio" name="cooking_time" value="up to 1.5hours"> 1hr - 1.5hours<br>
+    <input type="radio" name="cooking_time" value="more than 1.5hours"> 1.5hours +<br>
+  </form>
+
+<br> </br>
+  <h1 class="homepage-caption">Servings</h1>
+  <form>
+  Severing (10max):
+  <input type="number" name="servings" min="1" max="10">
+</form>
+
+<br> </br>
+  <form action="/recipe.html" methods="POST">
+    <input type="submit">
+  </form>
+
   </html>
